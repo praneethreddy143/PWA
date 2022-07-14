@@ -5,3 +5,6 @@ self.addEventListener("install" , e=>{
     })
    );
 });
+self.addEventListener("fetch",e =>{
+    console.log(`intercepting fetch request for :${e.request.url}`);
+});
